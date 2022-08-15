@@ -1,0 +1,47 @@
+body{
+    background:rgb(11, 11, 11);
+}
+.meter{
+    height: 30px;
+    max-width: 576px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+}
+#wrapper{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    bottom: 50%;
+    right: 35%;
+}
+.meter span{
+    display: block;
+    height: 100%;
+}
+.progress-bar{
+    background:linear-gradient(90deg,#ff8001 0%, #ebeee4, #0ec629 98.86%);
+    -webkit-animation: progressBar 5s ease-in-out;
+    -webkit-animation-fill-mode: both;
+    -moz-animation: progressBar 5s ease-in-out;
+    -moz-animation-fill-mode: both;
+}
+@-webkit-keyframes progressBar {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@-moz-keyframes progressBar {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
